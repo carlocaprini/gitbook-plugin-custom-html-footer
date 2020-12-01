@@ -25,7 +25,7 @@ module.exports = {
 
         "finish": function () {
             var $, $el, html;
-            var pathFile = this.options.pluginsConfig && this.options.pluginsConfig.layout && this.options.pluginsConfig.layout.footerPath;
+            var pathFile = this.options.pluginsConfig && this.options.pluginsConfig["custom-html-footer"] && this.options.pluginsConfig["custom-html-footer"].footerPath;
             var tmpl = '';
 
             if (pathFile && fs.existsSync(pathFile)) tmpl = fs.readFileSync(pathFile, {encoding: 'utf-8'});
@@ -33,7 +33,7 @@ module.exports = {
             urls.forEach(item => {
                 html = fs.readFileSync(item.url, {encoding: 'utf-8'});
                 $ = cheerio.load(html);
-                $el = $('body .book .book-body .body-inner .page-wrapper');
+                $el = $('body .book .book-body .body-inner');
 
                 $el.append(tmpl);
 
