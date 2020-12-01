@@ -1,28 +1,26 @@
-# Custom Footer for Gitbook
+# Custom HTML Footer for Gitbook
 
-Super simple pluging to add footer to gitbooks
+This plugin allows to add a HTML footer to all pages in a book while ignoring the summary column in the process.
 
-## Add to book.json
+## Usage
 
-add to `book.json`
+1. Update your `book.json`
 
-```
+```json
 {
   "plugins": [
-    "footer"
+    "custom-html-footer"
   ],
   "pluginsConfig": {
-    "layout": {
-      "footerPath" : "layouts/footer.html"
+    "custom-html-footer": {
+      "footerPath" : "custom-html-footers/footer.html"
     }
   }
 }
 ```
 
-## Install dependencies
+2. Install the book dependencies `gitbook install`
 
-`gitbook install`
+## Note
 
-### Note
-
-_forked from [gitbook-plugin-footer](https://www.npmjs.com/package/gitbook-plugin-footer)_
+This project is a fork of [gitbook-plugin-footer](https://www.npmjs.com/package/gitbook-plugin-footer).

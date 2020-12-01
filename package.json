@@ -18,5 +18,8 @@
         "type": "git",
         "url": "git+https://github.com/carlocaprini/gitbook-plugin-custom-html-footer.git"
     },
-    "version": "0.0.1"
+    "dependencies": {
+        "cheerio"
+    },
+    "version": "0.0.2"
 }
