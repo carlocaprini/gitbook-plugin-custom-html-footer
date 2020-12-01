@@ -33,7 +33,7 @@ module.exports = {
             urls.forEach(item => {
                 html = fs.readFileSync(item.url, {encoding: 'utf-8'});
                 $ = cheerio.load(html);
-                $el = $('div .body-inner');
+                $el = $('body .book .book-body .body-inner .page-wrapper');
 
                 $el.append(tmpl);
 

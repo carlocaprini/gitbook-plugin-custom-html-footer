@@ -1,36 +1,22 @@
 {
-    "author": "stefanzan",
-    "bugs": {
-        "url": "https://github.com/Bandwidth/gitbook-plugin-custom-footer/issues"
+    "author": {
+      "name": "carlocaprini",
+      "email": "7250891+carlocaprini@users.noreply.github.com"
     },
-    "description": "add footer to gitbook projects",
+    "description": "Add HTML footer to gitbook pages",
     "engines": {
         "gitbook": "*"
     },
-    "homepage": "https://github.com/Bandwidth/gitbook-plugin-custom-footer#readme",
     "keywords": [
         "gitbook",
         "footer",
         "plugins"
     ],
     "main": "index.js",
-    "maintainers": [
-        {
-            "email": "stefanzan@163.com",
-            "name": "stefanzan"
-        },
-        {
-            "email": "danielptolbert@gmail.com",
-            "name": "dtolb"
-        }
-    ],
-    "name": "gitbook-plugin-custom-footer",
+    "name": "gitbook-plugin-custom-html-footer",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Bandwidth/gitbook-plugin-custom-footer.git"
+        "url": "git+https://github.com/carlocaprini/gitbook-plugin-custom-html-footer.git"
     },
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "version": "1.0.3"
+    "version": "0.0.1"
 }
