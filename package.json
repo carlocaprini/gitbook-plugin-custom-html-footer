@@ -21,5 +21,11 @@
     "dependencies": {
         "cheerio": "latest"
     },
-    "version": "0.0.3"
+    "version": "0.0.3",
+    "keywords": [
+      "gitbook",
+      "plugin",
+      "custom-html-footer",
+      "footer"
+    ]
 }
