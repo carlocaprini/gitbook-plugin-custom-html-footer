@@ -8,12 +8,18 @@ module.exports = {
     hooks: {
         "page": function (page) {
 
+            var args = process.argv;
+			var dest = "_book";
+			if (args[2] == "build" && args.length >= 5) {
+				dest = args[4];
+			}
+
             if (this.output.name != 'website') return page;
 
             var lang = this.isLanguageBook() ? this.config.values.language : '';
             if (lang) lang = lang + '/';
 
-            var outputUrl = this.output.toURL('_book/' + lang + page.path);
+            var outputUrl = this.output.toURL(dest + '/' + lang + page.path);
 
             urls.push({
                 url: outputUrl + (outputUrl.substr(-5, 5) !== '.html' ? 'index.html' : '')
